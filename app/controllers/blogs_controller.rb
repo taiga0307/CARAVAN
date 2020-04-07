@@ -1,15 +1,18 @@
 class BlogsController < ApplicationController
   def index
+    # 記事を全件取得
+    @blogs = Blog.all
   end
 
   def show
   end
 
   def new
+    # 記事を全件取得
     @blog = Blog.new
   end
 
-  def creat
+  def create
     blog = Blog.new(blog_params)
     blog.save
     redirect_to blogs_path
