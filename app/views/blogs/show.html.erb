@@ -53,8 +53,8 @@
     </p>
     <!-- 編集部分 -->
     <%= link_to "編集", edit_blog_path(@blog) %>
-    <a href="#">編集</a>
-    <a href="#">削除</a>
+    <!-- 削除部分 -->
+    <%= link_to "削除", blog_path(@blog), method: :delete %>
     <div class="author-case clearfix">
       <div class="author-image"></div>
       <div class="author-box">
